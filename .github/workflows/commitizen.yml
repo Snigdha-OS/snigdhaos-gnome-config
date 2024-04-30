@@ -3,7 +3,7 @@ name: Check Commitizen
 on:
   push:
     branches:
-      - '*'
+      - master
   pull_request:
     types: [opened, synchronize]
 
