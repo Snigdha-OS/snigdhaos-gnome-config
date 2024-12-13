@@ -67,13 +67,6 @@ fi
 echo -e "\nCommit message:"
 echo -e "\033[1;36m$commit_msg\033[0m"
 
-# Confirm before committing
-read -p "Do you want to proceed with this commit? (y/n): " confirm
-if [[ "$confirm" != "y" && "$confirm" != "Y" ]]; then
-    echo "Commit aborted."
-    exit 0
-fi
-
 # Stage all changes
 git add .
 
